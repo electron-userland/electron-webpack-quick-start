@@ -37,9 +37,9 @@ yarn dev
 # compile source code and create webpack output
 yarn compile
 
-# create build with electron-builder
+# `yarn compile` & create build with electron-builder
 yarn dist
 
-# create unpacked build with electron-builder
+# `yarn compile` & create unpacked build with electron-builder
 yarn dist:dir
 ```

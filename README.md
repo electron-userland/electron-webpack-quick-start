@@ -17,7 +17,7 @@ The use of the [yarn](https://yarnpkg.com/) package manager is strongly recommen
 
 ```bash
 # copy template using curl
-curl -fsSL [repoLink]/archive/master.tar.gz | tar -xz --strip-components 2
+curl -fsSL [repoLink]/archive/master.tar.gz | tar -xz --strip-components 1
 
 # or copy template using git clone
 git clone [repoLink]

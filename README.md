@@ -13,7 +13,7 @@ Make sure to check out [`electron-webpack`'s documentation](https://webpack.elec
 ## Getting Started
 Simply clone down this reposity, install dependencies, and get started on your application.
 
-The use of the [yarn](https://yarnpkg.com/) package manager is strongly recommended, as opposed to using `npm`.
+The use of the [yarn](https://yarnpkg.com/) package manager is **strongly** recommended, as opposed to using `npm`.
 
 ```bash
 # copy template using curl

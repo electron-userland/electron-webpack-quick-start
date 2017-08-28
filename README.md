@@ -17,10 +17,10 @@ The use of the [yarn](https://yarnpkg.com/) package manager is **strongly** reco
 
 ```bash
 # copy template using curl
-curl -fsSL [repoLink]/archive/master.tar.gz | tar -xz --strip-components 1
+curl -fsSL https://github.com/electron-userland/electron-webpack-quick-start/archive/master.tar.gz | tar -xz --strip-components 1
 
 # or copy template using git clone
-git clone [repoLink]
+git clone https://github.com/electron-userland/electron-webpack-quick-start.git
 cd electron-webpack-quick-start
 rm -rf .git
 

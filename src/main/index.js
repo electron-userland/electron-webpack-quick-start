@@ -5,7 +5,7 @@ import { app, BrowserWindow } from 'electron'
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Global reference to mainWindow
-// Neccessary to prevent win from being garbage collected
+// Necessary to prevent win from being garbage collected
 let mainWindow
 
 function createMainWindow () {

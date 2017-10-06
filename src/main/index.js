@@ -8,26 +8,35 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 // Necessary to prevent win from being garbage collected
 let mainWindow
 
-function createMainWindow () {
+function createMainWindow() {
   // Construct new BrowserWindow
-  let win = new BrowserWindow()
+  const window = new BrowserWindow()
 
   // Set url for `win`
     // points to `webpack-dev-server` in development
     // points to `index.html` in production
-  let url = isDevelopment
-    ? 'http://localhost:9080'
+  const url = isDevelopment
+    ? `http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`
     : `file://${__dirname}/index.html`
 
-  if (isDevelopment) win.webContents.openDevTools()
+  if (isDevelopment) {
+    window.webContents.openDevTools()
+  }
 
-  win.loadURL(url)
+  window.loadURL(url)
 
-  win.on('closed', () => {
+  window.on('closed', () => {
     mainWindow = null
   })
 
-  return win
+  window.webContents.on('devtools-opened', () => {
+    window.focus()
+    setImmediate(() => {
+      window.focus()
+    })
+  })
+
+  return window
 }
 
 // Quit application when all windows are closed

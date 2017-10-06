@@ -1970,9 +1970,9 @@ electron-webpack-js@^1.0.4:
     babel-plugin-syntax-dynamic-import "^6.18.0"
     babel-preset-env "^1.6.0"
 
-electron-webpack@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/electron-webpack/-/electron-webpack-1.7.0.tgz#5ff13aa80f27bf417188768b22611af6707ea64f"
+electron-webpack@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/electron-webpack/-/electron-webpack-1.8.0.tgz#7b06d55cc91238c4c7fd1b81a20e78cbc6ac9ef4"
   dependencies:
     "@types/webpack-env" "^1.13.1"
     async-exit-hook "^2.0.1"

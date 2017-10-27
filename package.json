@@ -12,9 +12,9 @@
     "source-map-support": "^0.5.0"
   },
   "devDependencies": {
-    "electron": "1.7.8",
-    "electron-builder": "^19.34.1",
-    "electron-webpack": "1.8.0",
-    "webpack": "^3.6.0"
+    "electron": "1.7.9",
+    "electron-builder": "^19.42.1",
+    "electron-webpack": "1.10.1",
+    "webpack": "^3.8.1"
   }
 }

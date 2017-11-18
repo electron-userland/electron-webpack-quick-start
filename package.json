@@ -15,6 +15,7 @@
     "electron": "1.7.9",
     "electron-builder": "^19.42.1",
     "electron-webpack": "1.10.1",
+    "webpack-dev-server": "^2.9.4",
     "webpack": "^3.8.1"
   }
 }

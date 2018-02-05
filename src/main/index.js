@@ -1,6 +1,7 @@
 'use strict'
 
 import { app, BrowserWindow } from 'electron'
+import { path } from 'path'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
@@ -12,12 +13,19 @@ function createMainWindow() {
   // Construct new BrowserWindow
   const window = new BrowserWindow()
 
+  // Path to index file in production environment
+  const productionIndexPath = url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file',
+    slashes: true
+  })
+
   // Set url for `win`
     // points to `webpack-dev-server` in development
     // points to `index.html` in production
   const url = isDevelopment
     ? `http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`
-    : `file://${__dirname}/index.html`
+    : productionIndexPath
 
   if (isDevelopment) {
     window.webContents.openDevTools()

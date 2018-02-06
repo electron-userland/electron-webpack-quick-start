@@ -1,7 +1,8 @@
 'use strict'
 
 import { app, BrowserWindow } from 'electron'
-import { path } from 'path'
+import path from 'path'
+import url from 'url'
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
@@ -23,7 +24,7 @@ function createMainWindow() {
   // Set url for `win`
     // points to `webpack-dev-server` in development
     // points to `index.html` in production
-  const url = isDevelopment
+  const appURL = isDevelopment
     ? `http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`
     : productionIndexPath
 
@@ -31,7 +32,7 @@ function createMainWindow() {
     window.webContents.openDevTools()
   }
 
-  window.loadURL(url)
+  window.loadURL(appURL)
 
   window.on('closed', () => {
     mainWindow = null

@@ -14,8 +14,8 @@
   "devDependencies": {
     "electron": "1.8.4",
     "electron-builder": "^20.5.1",
-    "electron-webpack": "^1.13.0",
-    "webpack": "^3.11.0"
+    "electron-webpack": "^2.0.0",
+    "webpack": "^4.1.1"
   },
   "resolutions": {
     "webpack-sources": "1.0.1"

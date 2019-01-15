@@ -9,12 +9,12 @@
     "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
   },
   "dependencies": {
-    "source-map-support": "^0.5.9"
+    "source-map-support": "^0.5.10"
   },
   "devDependencies": {
-    "electron": "4.0.0",
+    "electron": "4.0.1",
     "electron-builder": "20.38.4",
-    "electron-webpack": "^2.6.1",
-    "webpack": "4.28.1"
+    "electron-webpack": "^2.6.2",
+    "webpack": "4.28.4"
   }
 }

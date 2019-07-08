@@ -2597,10 +2597,10 @@ electron-webpack-js@~2.3.2:
     babel-loader "^8.0.6"
     babel-plugin-component "^1.1.1"
 
-electron-webpack@^2.7.3:
-  version "2.7.3"
-  resolved "https://registry.yarnpkg.com/electron-webpack/-/electron-webpack-2.7.3.tgz#77e9a9ebcac46f37cfb4293a97710ec959af55c6"
-  integrity sha512-e2gN6Qnq1O3BJ7YemlO5C3bZ7RR0RbLa+STqMDKVLTNdOerKWFrVycCHv2YuaJg7FEORNAmbYbSzPIUgRkmTnw==
+electron-webpack@^2.7.4:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/electron-webpack/-/electron-webpack-2.7.4.tgz#f1deed156375fbd846ee718bfc9ccf93a2e27207"
+  integrity sha512-0278nUbG4bANuvrWpLq/CYKJhGwR1gzhAI5IInasbAV8FVA3PyAvu/KMZCZLuVbTxGmWStPg2pdLf1a9alfLCQ==
   dependencies:
     "@types/webpack-env" "^1.13.9"
     async-exit-hook "^2.0.1"

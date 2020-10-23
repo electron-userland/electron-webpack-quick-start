@@ -16,5 +16,8 @@
     "electron-builder": "^22.4.1",
     "electron-webpack": "^2.8.2",
     "webpack": "~4.42.1"
+  },
+  "build": {
+    "appId": "com.example.app"
   }
 }

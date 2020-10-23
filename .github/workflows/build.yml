@@ -1,6 +1,10 @@
 name: Build/release
 
-on: push
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
 
 jobs:
   release:
@@ -8,7 +12,11 @@ jobs:
 
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [
+          #            macos-latest,
+          #            ubuntu-latest,
+            windows-latest
+        ]
 
     steps:
       - name: Check out Git repository

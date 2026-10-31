@@ -3,3 +3,8 @@ dist/
 node_modules/
 thumbs.db
 .idea/
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+.pnp.*
